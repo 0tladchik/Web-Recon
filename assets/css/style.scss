@@ -1,0 +1,42 @@
+// --- Импортируем шрифт с Google Fonts ---
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+// --- Переопределяем стили темы ---
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #1A1A1A; // Чуть более мягкий черный фон
+}
+
+// Центрируем контент и ограничиваем ширину для читаемости
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+// Делаем основной заголовок более выразительным
+h1, h2 {
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3); // Легкое зеленое свечение
+}
+
+// Добавляем цветовой акцент на маркеры ">>"
+p, li {
+    strong {
+        // Этот код найдет жирный текст (как наши >>) и перекрасит его.
+        color: #00ff00; // Классический "hacker green"
+        font-weight: 700;
+    }
+}
+
+// Стилизуем кнопку "View on GitHub"
+.btn {
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    background: transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: rgba(0, 255, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+}
